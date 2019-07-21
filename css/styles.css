@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
+  font-family: "darker grotesque";
 }
 
 header {
@@ -25,21 +26,6 @@ a {
 
 main {
   margin: 50px 0;
-}
-
-footer {
-  background: #333;
-  color: white;
-  text-align: center;
-  height: 200px;
-}
-
-.footer {
-  padding-top: 50px;
-}
-
-i {
-  padding: 0 10px;
 }
 
 .left,
@@ -77,6 +63,22 @@ i {
   margin-top: 25px;
 }
 
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  height: 150px;
+  margin-top: 50px;
+}
+
+.footer {
+  padding-top: 50px;
+}
+
+i {
+  padding: 0 10px;
+}
+
 @media only screen and (min-width: 768px) {
   body {
     font-size: 1.3rem;
@@ -89,7 +91,6 @@ i {
   .main-pic {
     height: auto;
     width: auto;
-    border-radius: 10%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -111,11 +112,16 @@ i {
   }
 
   li {
-    flex-direction: row;
+    padding-left: 13px;
   }
 
   .dropdown {
     visibility: hidden;
+  }
+
+  .dropdown-content {
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -188,5 +194,14 @@ i {
 
   .dropdown:hover .dropdown-content {
     display: block;
+  }
+
+  .trio {
+    height: auto;
+    width: 100%;
+  }
+
+  .bb-info p {
+    font-size: 1.2rem;
   }
 }
